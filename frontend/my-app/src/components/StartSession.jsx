@@ -8,7 +8,7 @@ export default function StartSession() {
   const handleStart = async () => {
     const data = await createSession();
    
-    const correctUrl = `https://videoplayer-1-frontend.onrender.com/session/${data.unique_id}`;
+    const correctUrl = `http://localhost:5173/session/${data.unique_id}`;
     setSession({...data, userurl: correctUrl});
   };
 
